@@ -170,15 +170,61 @@ basic.forever(function () {
         }
         basic.pause(500)
     } else if (b == 1) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
-    } else if (false) {
-    	
+        basic.showLeds(`
+            # . . . .
+            . . . . .
+            # . . . .
+            . . . . .
+            # . . . .
+            `)
+        if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+            b = 0
+        }
+        basic.pause(100)
+        basic.showLeds(`
+            # . . . .
+            . . . . .
+            # # . . .
+            . . . . .
+            # . . . .
+            `)
+        if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+            b = 0
+        }
+        basic.pause(100)
+        basic.showLeds(`
+            # . # . .
+            . . . . .
+            # # # . .
+            . . . . .
+            # . # . .
+            `)
+        if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+            b = 0
+        }
+        basic.pause(100)
+        basic.showLeds(`
+            # . # . .
+            . . . # .
+            # # # # .
+            . . . # .
+            # . # . .
+            `)
+        if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+            b = 0
+        }
+        basic.pause(100)
+        basic.showLeds(`
+            # . # . #
+            . . . # .
+            # # # # #
+            . . . # .
+            # . # . #
+            `)
+        if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
+            b = 0
+            basic.pause(500)
+        }
     } else if (input.buttonIsPressed(Button.AB)) {
         led.setBrightness(255)
         basic.showLeds(`
