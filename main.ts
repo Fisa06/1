@@ -168,7 +168,29 @@ basic.forever(function () {
         if (input.buttonIsPressed(Button.A) || input.buttonIsPressed(Button.B)) {
             a = 0
         }
-        basic.pause(100)
+        basic.pause(500)
+    } else if (b == 1) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (false) {
+    	
+    } else if (input.buttonIsPressed(Button.AB)) {
+        led.setBrightness(255)
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            # . # . #
+            . # . # .
+            . . # . .
+            `)
+        basic.pause(200)
+        basic.clearScreen()
+        basic.pause(200)
     } else if (input.isGesture(Gesture.Shake)) {
         led.setBrightness(255)
         for (let index = 0; index < 5; index++) {
@@ -203,5 +225,7 @@ basic.forever(function () {
             `)
     } else if (input.lightLevel() > 128) {
         basic.clearScreen()
+    } else {
+    	
     }
 })
